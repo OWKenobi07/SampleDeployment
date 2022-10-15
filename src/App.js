@@ -4,9 +4,11 @@ import {withRouter} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
+    <div>
     <NavigationBar/>
-    <h1>With Routers</h1>
+                <div className='py-5 z-0'>
+                    <Routes />
+                </div>
     </div>
   );
 }
