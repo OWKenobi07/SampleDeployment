@@ -1,6 +1,6 @@
 import './App.css';
 import NavigationBar from './components/NavigationBar';
-import Routes from './components/Routes/';
+import Routes from './components/Routes';
 import {withRouter} from 'react-router-dom';
 
 function App() {
