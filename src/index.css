@@ -1,13 +1,31 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-nav{
+    /* @apply  pt-4 py-2 px-2 text-gray-100 text-sm font-semibold focus:outline-none 
+    transition duration-500 border-b-4 border-transparent hover:border-white hover:text-violet-50 focus:border-white  */
+
+    @apply  pt-4 py-2 px-2 text-gray-100 text-sm font-semibold focus:outline-none visited:text-black
+  }
+
+.btn-nav-secondary{
+  @apply hover:bg-purple-800 hover:text-white py-2 font-semibold text-center text-purple-800;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn-agree{
+  @apply bg-emerald-500 border-solid border-2 rounded-md font-semibold text-white p-3 transition ease-in-out 
+  delay-150 hover:bg-lime-200 hover:text-black hover:translate-y-1 hover:scale-90 duration-300;
+  /* @apply bg-emerald-500 border-solid border-2 rounded-md font-semibold text-white p-3 active:bg-lime-200 
+  active:transition active:ease-in-out active:scale-90 focus:bg-lime-200 focus:text-black focus:scale-90; */
+
 }
+
+.btn-disagree{
+  @apply bg-red-700 border-solid border-2 rounded-md font-semibold text-white p-3 transition ease-in-out 
+  delay-150 hover:bg-red-200 hover:text-black hover:translate-y-1 hover:scale-90 duration-300;
+}
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }

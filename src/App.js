@@ -1,5 +1,6 @@
 import './App.css';
 import NavigationBar from './components/NavigationBar';
+import {withRouter} from 'react-router-dom';
 
 function App() {
   return (
@@ -10,4 +11,4 @@ function App() {
   );
 }
 
-export default App;
+export default withRouter(App);
