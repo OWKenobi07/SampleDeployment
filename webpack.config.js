@@ -4,13 +4,14 @@ const tailwindcss = require('tailwindcss');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
+
 module.exports = {
 
     entry: path.resolve(__dirname, './src/index.js'),
 
     output:{
+      path: path.resolve(__dirname, './build'),
       filename: 'bundle.js',
-      path:'/dist'
     },
   
     devServer:{
@@ -21,10 +22,11 @@ module.exports = {
     },
 
     plugins: [
-        new HtmlWebpackPlugin({
-            base: '/',
-            template: './src/index.html',
-          }),
+        new HtmlWebpackPlugin(
+          {
+            template: './src/index.html'
+          }
+        ),
          
 
     ],
