@@ -7,12 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
 
     entry: path.resolve(__dirname, './src/index.js'),
-
-    output:{
-      filename: 'bundle.js',
-      path:'/RjsProject/sampledeployment/dist'
-    },
-  
+    
     devServer:{
         port: 3000,
         hot: true,
