@@ -10,7 +10,7 @@ module.exports = {
 
     output:{
       filename: 'bundle.js',
-      path:'/'
+      path:'\RjsProject\samplelogin'
     },
   
     devServer:{
