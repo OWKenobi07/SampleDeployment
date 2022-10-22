@@ -20,12 +20,6 @@ module.exports = {
         historyApiFallback: true     
     },
 
-    optimization: {
-      splitChunks: {
-        chunks:"all"
-        }
-    },
-
     plugins: [
         new HtmlWebpackPlugin({
             base: '/',
